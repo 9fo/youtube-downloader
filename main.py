@@ -26,9 +26,9 @@ elif a == "2":
 elif a == "3":
     with open('videos.txt', 'r') as f:
         for line in f.readlines():
-        yt = YouTube(vid)
-        yt.filter(progressive=True, file_extension='mp4')
-        yt.download()
+            yt = YouTube(vid)
+            yt.filter(progressive=True, file_extension='mp4')
+            yt.download()
     print('[!] All videos have been downloaded')
 elif a == "4":
     with open('videos.txt', 'r') as f:
