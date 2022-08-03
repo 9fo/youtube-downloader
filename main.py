@@ -33,7 +33,7 @@ elif a == "3":
 elif a == "4":
     with open('videos.txt', 'r') as f:
         for line in f.readlines():
-        yt = YouTube(vid)
-        yt.filter(progressive=True, file_extension='mp3')
-        yt.download()
+            yt = YouTube(vid)
+            yt.filter(progressive=True, file_extension='mp3')
+            yt.download()
     print('[!] All videos have been downloaded')
